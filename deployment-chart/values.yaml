@@ -1,0 +1,13 @@
+name: frontend-flask 
+namespace:
+  name: automateforgood
+ 
+image:
+  repository: 202011501/automateforgood
+  tag: ""
+
+replicaCount: 3
+
+service: 
+  port: 5000
+  type: LoadBalancer
