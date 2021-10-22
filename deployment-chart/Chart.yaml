@@ -1,0 +1,11 @@
+apiVersion: v1
+name: frontend-flask
+description: Install a ML Flask deployment
+keywords:
+- python
+- Flask
+- DevOps
+version: 1.0.0
+maintainers:
+- name: Team 
+  email: sivanaikk0903@gmail.com
