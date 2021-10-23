@@ -1,13 +1,17 @@
-name: frontend-flask 
+name: automateforgood
 namespace:
   name: automateforgood
  
 image:
   repository: 202011501/automateforgood
-  tag: ""
+  tag: latest
 
-replicaCount: 3
+replicaCount: 1
 
 service: 
-  port: 5000
+  port:
+    flask: 5000
+    chef: 
+      http: 80
+      https: 443
   type: LoadBalancer
