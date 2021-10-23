@@ -7,13 +7,16 @@ metadata:
   namespace: {{ .Values.namespace.name }} 
 spec:
   ports:
-  - port: {{ .Values.service.port.flask }} 
+  - port: {{ .Values.service.port.flask }}
+    name: flask 
     protocol: TCP
     targetPort: {{ .Values.service.port.flask }}
   - port: {{ .Values.service.port.chef.http }} 
+    name: chef-http
     protocol: TCP
     targetPort: {{ .Values.service.port.chef.http }}
   - port: {{ .Values.service.port.chef.https }} 
+    name: chef-https
     protocol: TCP
     targetPort: {{ .Values.service.port.chef.https }}
   selector:
