@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="stylesheet" href="./static/bootstrap.css" type="text/css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <script src="./static/bootstrap.js"></script>
+  <title>Project</title>
+
+  <style>
+      
+      
+      body{
+        font-family: var(--bs-body-font-family);
+        margin: 0px;;
+      }
+      
+      .text{
+        font-weight: 1000 !important;
+        margin-left: 6px;
+        font-size: x-large !important;
+      }
+      .text1{
+        font-weight: 1000 !important;
+        margin-left: 6px;
+        
+      }
+      
+      
+      .pic {
+        max-width: 30%;
+        margin-top: 10px;
+
+      }
+      .pic:hover{
+        box-shadow: 5px 5px 10px black;
+        transition: box-shadow 0.5s;
+      }
+      .sample {
+        margin: 12px;
+        margin-right: 2px;
+        min-height: 170px;
+        /*border: 100px gray; have to add border*/
+      
+        text-align: center;
+
+        font-size: large;
+        max-width: 150%;
+       
+       
+      }
+      .head-two{
+        margin:10px;
+          margin-top: 10px;
+          font-size: 14px;
+         
+      }
+     .bottom-black{
+        display: flex;
+        margin-top: 80px;
+        text-align: center;
+     }
+      
+      
+      .middle-block{
+          margin-top: 10px;
+      }
+      .head {
+            margin-top: 10px;
+            margin-left: 10px;
+        font-weight: 1000;
+          font-size: calc(1.225rem + 2.2vw);
+          
+          
+        }
+        .button{
+       
+       margin-top: 20px;
+       padding-left:200px !important;
+       padding-right:218px !important;
+     }
+        
+    .bottom-block{
+       display: flex;
+    }
+    .pic{
+        border-radius: 15px;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+      
+      <div class="container">
+        <!-- Image and text -->
+<nav class="navbar navbar-light ">
+  <a class="navbar-brand text" href="#">
+    <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top text" alt="">-->
+    Automate ENV
+  </a>
+</nav>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xl-end bar" id="navbarSupportedContent">
+            <!--menu list-->
+            <ul class="navbar-nav">
+              <li class="nav-item item">
+                <a class="nav-link bar text1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item text1">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#uploadModal">Configure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text1" data-bs-toggle="modal" href="">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text1" data-bs-toggle="modal" href="">Architecture</a>
+              </li>
+          </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--nav ends-->
+     <!--upload Modal -->
+     <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+         <div class="modal-body">
+          <!--form content here-->
+          <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+        
+          <label>Name:</label>
+          <div class="col-sm-12">
+            <input name="name" type="text" class="form-control" id="inputtext">
+          </div>
+         <label>IP Address:</label>
+         <div class="col-sm-12">
+          <input name="ip" type="text" class="form-control" id="inputtext" placeholder="0.0.0.0">
+        </div>
+        <label>User-Name:</label>
+         <select name="user_name" class="form-select" aria-label="Default select example" aria-placeholder="downloasdd">
+           <option value="ubuntu">Ubuntu</option>
+           <option value="ec2-user">Ec2-user</option>
+         </select>
+
+         <label>Select:</label>
+         <select name="software_name" class="form-select" aria-label="Default select example" aria-placeholder="downloasdd">
+           <option value="server">server</option>
+           <option value="net-tools">net-tools</option>>
+         </select>
+        <label>Select a file:</label>
+         <input name="file" type="file" class="form-control" placeholder="select a file">
+         <div class="col-12">
+          <button type="submit" class="btn btn-success button">submit</button>
+        </div>
+         
+         
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div class="container bottom-block">
+        <div class="row middle-block">
+            <div class="col-lg-7">
+                <div class="head">
+              Are You Guys Excited to Install Any Software With A Single Click??</div>
+              <div class="head-two"> 
+                Automate ENV is a free open-source software created to solve the
+            environment issues facing by the Web Developers.This software is
+            backed by Chef Infra which is a Configuration Management tool,here
+            we used Chef to automate installations, updations and removal
+            (uninstallations) of softwares.To explore more click on CONFIGURE.
+              </div>
+            </div>
+            <div class="col-lg-5">
+                <img class="img-fluid pic "
+                src="https://miro.medium.com/max/1400/1*jGtzzbyshVAnYHrslLtbAg.jpeg"
+                alt="Image"
+                height="350px"
+                width="500px"
+              /></div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="sample">
+            <img src="https://miro.medium.com/max/1400/1*jGtzzbyshVAnYHrslLtbAg.jpeg" class="pic" />
+            <p>
+              
+            </p>
+            <div class="download">
+              <p class="d-text">Download</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="sample">
+            <img src="https://miro.medium.com/max/1400/1*jGtzzbyshVAnYHrslLtbAg.jpeg" class="pic" />
+            <p>
+              
+            </p>
+            <div class="download">
+              <p class="d-text">Download</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="sample">
+            <img src="https://miro.medium.com/max/1400/1*jGtzzbyshVAnYHrslLtbAg.jpeg" class="pic" />
+            <p>
+             
+            </p>
+            <div class="download">
+              <p class="d-text">Download</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="sample">
+            <img src="https://miro.medium.com/max/1400/1*jGtzzbyshVAnYHrslLtbAg.jpeg" class="pic" />
+            <p>
+              
+            </p>
+            <div class="download">
+              <p class="d-text">Download</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</head>

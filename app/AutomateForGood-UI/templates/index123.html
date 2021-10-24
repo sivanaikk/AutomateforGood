@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @media (min-width: 601px) {
+        body {
+          background-image: linear-gradient(
+            to left,
+            rgb(27, 18, 18),
+            rgb(194, 188, 188)
+          );
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.15em;
+          color: black;
+        }
+        .left {
+          font-weight: bold;
+        }
+        .main {
+          font-family: "Noto Sans", sans-serif;
+        }
+        .head {
+          margin: 10px;
+          padding: 10px;
+          font-size: 3.15em;
+        }
+        .a,
+        .b,
+        .c {
+          text-shadow: 2px 2px 2px black;
+          border-radius: 20px;
+          /* background-color: gray; */
+          color: aliceblue;
+          width: 125px;
+          padding: 10px;
+          margin-right: 150px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .right img {
+          border-radius: 30px;
+        }
+        .right img:hover {
+          box-shadow: 10px 10px 15px black;
+          transition: box-shadow 0.5s;
+        }
+        .a:hover,
+        .b:hover,
+        .c:hover {
+          font-size: 1.25em;
+          background-color: rgb(56, 13, 6);
+          box-shadow: 4px 4px 4px rgb(190, 178, 178);
+          transition: color 0.5s, box-shadow 0.5s, background-color 0.5s,
+            font-size 0.2s;
+        }
+        .left,
+        .right {
+          border-radius: 20px;
+
+          /* border: 1px solid black; */
+        }
+        .left {
+          margin-right: 20px;
+          padding: 20px;
+          text-shadow: 3px 3px 5px rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
+        }
+        .right {
+          padding: 20px;
+          margin: 0;
+        }
+        .main {
+          display: flex;
+        }
+        .navbar {
+          display: flex;
+        }
+        .text2 {
+          font-size: 1.15em;
+        }
+        nav {
+          font-family: "Work Sans", sans-serif;
+          display: flex;
+        }
+        nav div {
+          flex: 1;
+        }
+        .title {
+          font-size: 2em;
+          padding: 10px;
+          font-family: "IM Fell English SC", serif;
+          font-weight: bold;
+          color: rgb(7, 30, 36);
+          text-shadow: 2px 2px 4px rgb(255, 255, 255);
+        }
+        .final {
+          display: flex;
+        }
+        .final div {
+          flex: 1;
+        }
+        .title {
+          font-size: 2em;
+          padding: 10px;
+          font-family: "IM Fell English SC", serif;
+          font-weight: bold;
+        }
+      }
+
+      /*/////////////////////////////////// This is for mobile ///////////////////////////////////*/
+
+      @media (max-width: 600px) {
+        body {
+          background-image: linear-gradient(
+            to left,
+            rgb(27, 18, 18),
+            rgb(194, 188, 188)
+          );
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 0.75em;
+        }
+        .left {
+          font-weight: bold;
+        }
+        .main {
+          font-family: "Noto Sans", sans-serif;
+        }
+        .head {
+          margin: 10px;
+          padding: 10px;
+          font-size: 2.4em;
+        }
+        .a,
+        .b,
+        .c {
+          text-shadow: 2px 2px 2px black;
+          border-radius: 10px;
+          /* background-color: gray; */
+          color: aliceblue;
+          /* width:20px; */
+          padding: 10px;
+          margin-right: 20px;
+          text-align: center;
+          /* margin-bottom: -10px; */
+        }
+        .right img {
+          border-radius: 30px;
+          height: 250px;
+          width: 375px;
+        }
+        .right img:hover {
+          box-shadow: 10px 10px 15px black;
+          transition: box-shadow 0.5s;
+        }
+        .a:hover,
+        .b:hover,
+        .c:hover {
+          margin-bottom: 10px;
+          /* font-size: 0.9em; */
+          background-color: rgb(56, 13, 6);
+          box-shadow: 2px 2px 2px rgb(190, 178, 178);
+          transition: box-shadow 0.5s, background-color 0.5s, font-size 0.2s;
+        }
+        .left,
+        .right {
+          border-radius: 20px;
+
+          /* border: 1px solid black; */
+        }
+        .left {
+          margin-right: 20px;
+          padding: 20px;
+          text-shadow: 3px 3px 5px rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
+        }
+        .right {
+          padding: 20px;
+          margin: 0;
+        }
+        /* .main{
+            display: flex;
+        } */
+        .navbar {
+          display: flex;
+        }
+        .text2 {
+          font-size: 1.15em;
+        }
+        nav {
+          font-family: "Work Sans", sans-serif;
+          display: flex;
+        }
+        nav div {
+          flex: 1;
+        }
+        .title {
+          font-size: 1.2em;
+          padding: 10px;
+          font-family: "IM Fell English SC", serif;
+          font-weight: bold;
+          color: rgb(7, 30, 36);
+          text-shadow: 2px 2px 4px rgb(255, 255, 255);
+        }
+        .final {
+          display: flex;
+        }
+        .final div {
+          flex: 1;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="title">Automate ENV</div>
+        <div class="navbar">
+          <a class="a" href="index.html">HOME</a>
+          <a class="b" href="configure.html">CONFIGURE</a>
+          <a class="c" href="about.html">ABOUT US</a>
+        </div>
+      </nav>
+      <br />
+      <div class="main">
+        <div class="left">
+          <span class="head"
+            >Install any software<br />in a single click...</span
+          >
+          <br />
+          <br />
+          <br />
+          <br /><span class="text2"
+            >Automate ENV is a free open-source software created to solve the
+            environment issues facing by the Web Developers.This software is
+            backed by Chef Infra which is a Configuration Management tool,here
+            we used Chef to automate installations, updations and removal
+            (uninstallations) of softwares.To explore more click on CONFIGURE. </span
+          ><br /><br />
+        </div>
+        <div class="right">
+          <center>
+            <img
+              src="https://miro.medium.com/max/1400/1*jGtzzbyshVAnYHrslLtbAg.jpeg"
+              alt="Image"
+              height="350px"
+              width="500px"
+            />
+          </center>
+        </div>
+      </div>
+      <div class="final"></div>
+    </div>
+  </body>
+</html>

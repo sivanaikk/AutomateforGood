@@ -11,4 +11,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 EXPOSE 80
 EXPOSE 443
 EXPOSE 5000
-ENTRYPOINT flask run --host 0.0.0.0 
+ENTRYPOINT cd AutomateForGood-UI && flask run --host 0.0.0.0 

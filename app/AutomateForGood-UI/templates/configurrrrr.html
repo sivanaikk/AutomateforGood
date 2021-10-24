@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+         body{
+        font-family: var(--bs-body-font-family);
+        margin: 0px;;
+      }
+      .heading {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+      .text{
+        font-weight: 1000 !important;
+        margin-left:4px;
+        font-size: x-large !important;
+      }
+      .text1{
+        font-weight: 1000 !important;
+        margin-left: 6px;
+        
+      }
+      .main-text{
+        height: 200px;
+        background-color: black;
+        margin-bottom: 20px;;
+      }
+      .name{
+        margin-right: 0px !important;
+      }
+      .button{
+       
+        margin-top: 20px;
+        padding-left:200px !important;
+        padding-right:218px !important;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="./js/bootstrap.js"></script>
+    <title>configure</title>
+  </head>
+  <body>
+    <!--nav starts-->
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+      
+      <div class="container">
+        <!-- Image and text -->
+<nav class="navbar navbar-light ">
+  <a class="navbar-brand text" href="#">
+    <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top text" alt="">-->
+    Automate ENV
+  </a>
+</nav>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xl-end bar" id="navbarSupportedContent">
+            <!--menu list-->
+            <ul class="navbar-nav">
+              <li class="nav-item item">
+                <a class="nav-link bar text1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text1" data-bs-toggle="modal" href="">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text1" data-bs-toggle="modal" href="">Archetecture</a>
+              </li>
+          </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--nav ends-->
+     <!--upload Modal -->
+     <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+              <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+         <div class="modal-body">
+          <!--form content here-->
+         <form action="#">
+        
+          <label>Name:</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="inputtext">
+          </div>
+         <label>IP Address:</label>
+         <div class="col-sm-12">
+          <input type="text" class="form-control" id="inputtext">
+        </div>
+        
+
+         <label>Select:</label>
+         <select class="form-select" aria-label="Default select example" aria-placeholder="downloasdd">
+           <option value="react">react</option>
+           <option value="node js">node js</option>
+           <option value="python">python</option>
+         </select>
+        <label>Select a file:</label>
+         <input type="file" class="form-control" placeholder="select a file">
+         <div class="col-12">
+          <button type="submit" class="btn btn-success button">submit</button>
+        </div>
+         
+         
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div>
+      <div class="main-text"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+
+        </div>
+        <div class="col-lg-4">
+          <div class="mb-3 row">
+            <label for="inputtext" class="col-sm-2 col-form-label">Name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputtext">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">IP Adress:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputPassword">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="mb-3 row">
+            <label for="formFile" class="form-label"> Select a file:</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    
+  </body>
+</html>
