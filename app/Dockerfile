@@ -1,6 +1,6 @@
 FROM chef/chefworkstation:current
 LABEL maintainer="Automate for Good@Team"
-COPY . /app
+COPY /app /app
 WORKDIR /app
 RUN apt-get update
 RUN apt-get install net-tools -y
