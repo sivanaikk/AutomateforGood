@@ -7,7 +7,7 @@ RUN apt-get install net-tools -y
 RUN apt-get install python3.8 -y 
 RUN apt-get install python3-pip -y
 ENV PATH=/home/ubuntu/.virtualenvs/bin:$PATH
-RUN pip3 freeze | cat >> requirements.txt
+#RUN pip3 freeze | cat >> requirements.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
 EXPOSE 80
 EXPOSE 443
