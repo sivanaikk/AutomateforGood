@@ -1,83 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-
-    <style>
+<html>
+  <head>
+      <style>
         body{
-            background-image: linear-gradient(to left, rgb(27, 18, 18) , rgb(194, 188, 188));
+          margin: 0%;
+          background-image: url("./static/Desktop\ -\ 7.png");
+        
         }
-        a{
-            text-decoration: none;
-            font-size: 1.15em;
-            color: black;
-            
-        }
-
-        .a, .b, .c{
-            text-shadow: 2px 2px 2px black;
-            border-radius: 20px;
-            /* background-color: gray; */
-            color: aliceblue;   
-            width:125px;
-            padding: 10px;
-            margin-right: 150px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-  
-        .a:hover, .b:hover, .c:hover{
-           
-           font-size: 1.25em;
-            background-color: rgb(56, 13, 6);    
-            box-shadow: 4px 4px 4px rgb(190, 178, 178);
-            transition: color 0.5s,box-shadow 0.5s,background-color 0.5s,font-size 0.2s;
-
-        }
-        .navbar{
-            display:flex;
-           
- 
-        }
-
-        nav{
-            font-family: 'Work Sans', sans-serif;
-            display: flex;
-        }
-        nav div{
-            flex: 1;
-        }
-        .title{
-            font-size: 2em;
-            padding: 10px;
-            font-family: 'IM Fell English SC', serif;
-            font-weight: bold;
-            color: rgb(111, 211, 236);
-            text-shadow: 2px 2px 4px rgb(0, 0, 0);
-        }
+          .text{
+        font-weight: 1000 !important;
+        margin-left:4px;
+        font-size: x-large !important;
+      }
+      .text1{
+        font-weight: 1000 !important;
+        margin-left: 6px;
+        
+      }
+      .text-white{
+        padding-top: 80px;
+        padding-left: 20px;
+        font-size: calc(2.005rem + 1vw);
+      }
+      .text-light{
+        padding-left: 20px;
+        font-weight: bold;
+      }
+      .style1 {
+        
+        margin-bottom: 30px;
+        min-height: 300px;
+        width: 100%;
+        height: fit-content;
+       background-color: black;
+       background-image: url("./static/Group\ 11.png");
        
         
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body >
-    <div>
-        <nav>
-            <div class="title">Automate ENV</div>
-            <div class="navbar">
-            <a class="a" href="index.html">HOME</a>
-            <a class="b" href="configure.html">CONFIGURE</a>
-            <a class="c" href="about.html">ABOUT US</a>
-        </div>
-        </nav>
-        <br>
+      }
+      .pic-text1{
+        font-weight: bold;
+        margin-left: 15% !important;
+      }
+      .pic-text2{
+        font-weight: bold;
+        margin-left: 15% !important;
+      }
+      .pic-text3{
+        font-weight: bold;
+        margin-left: 0% !important;
+      }
+      .button{
        
-</body>
+       margin-top: 20px !important;
+       padding-left:200px !important;
+       padding-right:218px !important;
+     }
+     
+     
+      .form-btn{
+        background-color: #4CBB17;
+        width:100% !important;
+        margin-top:20px;
+     }
+      .bg{
+        height: 300px;
+        background-color: black;
+        align-items: center ;
+        margin-bottom: 20px;;
+      }
+      .block{
+          height: 60% !important;
+          background-color: white;
+      }
+      .bottom-cards{
+        margin-top: 8.2% !important;
+        
+      }
+      .settings-btn{
+  width:100%;
+  border:1px solid lightgray;
+  margin-top:4% !important;
+  
+  background-color: #4CBB17;
+  }
+  .matter{
+   
+    color: white;
+  }
+  .third-block{
+    margin-left: 12% !important;
+  }
+      </style>
+    <title>Configure</title>
+    <link rel="stylesheet" href="./static/style.css" type="text/css" />
+    <link rel="stylesheet" href="./static/css/bootstrap.css" type="text/css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="./static/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-height  ">
+      
+        <div class="container-fluid">
+          <!-- Image and text -->
+  <nav class="navbar navbar-light ">
+    <a class="navbar-brand text" href="{{ url_for('home') }}">
+      <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top text" alt="">-->
+     Amazing kitchen
+    </a>
+  </nav>
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-xl-end bar" id="navbarSupportedContent">
+              <!--menu list-->
+              <ul class="navbar-nav">
+                <li class="nav-item item">
+                  <a class="nav-link bar text1" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item text1">
+                  <a class="nav-link" aria-current="page" data-bs-target="#uploadModal">Configure</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text1" aria-current="page" href="{{ url_for('aboutus') }}">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text1" aria-current="page" href="{{ url_for('architecture') }}">Architecture</a>
+                </li>
+            </div>
+            </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Bottom blocks-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="style1">
+            <div class=col-8>
+              <h3 class="text-white">How to Configure ?
+
+              </h3>
+              <p class="text-light">
+                1. Click on the configure button 
+                
+                  <br>
+                  2. Provide the required details
+                  <br>
+                3. Amazing Kitchen will configure your Operating System
+              </p>
+              <div>
+            </div>
+          </div>
+        </div>
+    <div class="container">
+      <div class="row third-block">
+       
+        <div class="col-lg-4">
+          <img src="./static/1.png" alt="broooo!!! net on chy" class="img-fluid pic1">
+          <div class="pic-text1">Chef</div>
+        </div>
+        <div class="col-lg-4">
+          <img src="./static/2.png" alt="broooo!!! net on chy" class="img-fluid pic2 ">
+          <div class="pic-text2">Devops</div>
+        </div>
+        <div class="col-lg-4">
+          <img src="./static/IMG_20211025_003252.jpeg" alt="broooo!!! net on chy" class="img-fluid pic3">
+          <div class="pic-text3">SSH_AUTHENTICATION</div>
+        </div>
+        
+      </div>
+    </div>
+ </div>
+ <button type="button" class="btn btn-success settings-btn" data-bs-toggle="modal" data-bs-target="#submit">CONFIGURE</button>
+ <!--details  Modal -->
+<div class="modal fade" id="submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <form action="{{ url_for("upload_file")}}" method="post" enctype="multipart/form-data">
+        
+    <label>Name:</label>
+    <div  class="col-sm-12">
+      <input name="name" type="text" class="form-control" id="inputtext">
+    </div>
+   <label>IP Address:</label>
+   <div class="col-sm-12">
+    <input name="ip" type="text" class="form-control" id="inputtext">
+  </div>
+  
+
+   <label>Select User-Name:</label>
+   <select name="user_name" class="form-select" aria-label="Default select example" aria-placeholder="downloasdd">
+     <option value="ubuntu">Ubuntu</option>
+     <option value="ec2-user">Ec2-User</option>
+                                               </select>
+     <label>Select Software-Name:</label>
+   <select name="software_name" class="form-select" aria-label="Default select example" aria-placeholder="downloasdd">
+     <option value="server">Server</option>
+     <option value="nodejs">Node JS</option>
+     <option value="python3">Python</option>
+     <option value="xampp">Xampp Server</option>
+     <option value="net-tools">Net-Tools</option>
+
+
+   </select>
+  <label>Select pem file:</label>
+   <input name="file" type="file" class="form-control" placeholder="select a file">
+   <div class="col-12">
+    <button type="submit" class="btn btn-success button">submit</button>
+  </div>
+   
+   
+</form>
+</div>
+</div>
+</div>
+</div>
+<!---->
+  </body>
 </html>

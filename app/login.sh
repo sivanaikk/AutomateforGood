@@ -1,4 +1,5 @@
-ssh -i "/app/pem/$2" $3@$1 date
+#echo "/app/pem/$2" "$3@$1"
+ssh -i "/app/pem/$2" "$3@$1" date
 a=$?
 #echo $a
 if [ $a == 0 ]
